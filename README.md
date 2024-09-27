@@ -1,5 +1,9 @@
 # Installation of the OpenCL Programming Guide sample code
 
+*Note: This code was copied from [this archived SVN repo](https://storage.googleapis.com/google-code-archive-source/v2/code.google.com/opencl-book-samples/source-archive.zip). Because
+the original SVN repo is down, I was not able to copy the histories or authors appropriately. Help would be appreciated to get those histories and authors so that this repository
+can properly reflect those attributions.*
+
 ## Introduction
 
 The sample code for the OpenCL Programming Guide was designed to work on a variety of OpenCL 1.1-compatible devices and platforms.  This page details instructions on building the sample code for a select set of platforms.  The code has been tested on Mac OS X 10.7, Microsoft Windows 7, and Ubuntu Linux 11.04.  The sample code has been tested using the AMD, Nvidia, and Apple OpenCL implementations.
