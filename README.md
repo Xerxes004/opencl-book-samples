@@ -1,11 +1,11 @@
-#summary Installation of the OpenCL Programming Guide sample code
+# Installation of the OpenCL Programming Guide sample code
 
-= Introduction =
+## Introduction
 
 The sample code for the OpenCL Programming Guide was designed to work on a variety of OpenCL 1.1-compatible devices and platforms.  This page details instructions on building the sample code for a select set of platforms.  The code has been tested on Mac OS X 10.7, Microsoft Windows 7, and Ubuntu Linux 11.04.  The sample code has been tested using the AMD, Nvidia, and Apple OpenCL implementations.
 
 
-= Prerequisites =
+## Prerequisites
 
 The OpenCL sample code depends on the following libraries:
 
@@ -13,15 +13,15 @@ The OpenCL sample code depends on the following libraries:
   * [http://freeimage.sourceforge.net/ FreeImage] (optional, required for _Chapter_8/ImageFilter2D_ example only)
   * [http://www.boost.org/ Boost] (optional, required for _Chapter_16/Dijkstra_ example, Linux/Mac-only)
 
-= Checkout the source code ==
+## Checkout the source code
 
 Instructions for checking out the source code from Subversion can be found at [https://code.google.com/p/opencl-book-samples/source/checkout].  Checkout the code to a local folder using a Subversion client on your platform and return to this page for further instructions.
 
-= Building the source code ==
+## Building the source code
 
 The following sections describe how to build the source code for each of the platforms that the code has been tested on.
 
-== Microsoft Windows 7 w/ Microsoft Visual Studio 2008 ==
+### Microsoft Windows 7 w/ Microsoft Visual Studio 2008
 
 Preparation:
 
@@ -39,40 +39,39 @@ Building:
  * Now open C:\opencl-book-samples\build\ALL_BUILD.sln in Visual Studio 2008 and click "Build" and it should build the sample code.
 
 
-== Mac OS X 10.7 ==
+### Mac OS X 10.7
 
 The easiest way to install the prerequisites on Mac OS X is to use [http://www.macports.org].  In order to use macports, you will need to install Xcode 4.1.  Once macports is installed, the required ports can be installed with the command:
 
-{{{
-  sudo port install cmake freeimage boost
-}}}
+```
+sudo port install cmake freeimage boost
+```
 
 You can then build the code with the following commands:
 
-{{{
+```
  ~/opencl-book-samples$ mkdir build
  ~/opencl-book-samples$ cd build
  ~/opencl-book-samples$ cmake ../
  ~/opencl-book-samples$ make
-}}}
+```
 
 NOTE: The code has been built on Mac OS X 10.7 Lion.  Some of the examples will not build on previous versions of Mac OS X because Lion is the first version to support OpenCL v1.1.  
 
-== Ubuntu Linux 11.04 ==
+### Ubuntu Linux 11.04
 
 Installation of the prerequisites on Ubuntu can be done using *apt-get*:
 
-{{{
-  sudo apt-get install subversion cmake libboost-all-dev libfreeimage-dev
-}}}
+```
+sudo apt-get install subversion cmake libboost-all-dev libfreeimage-dev
+```
 
 After installation of your OpenCL implementation, you can build simply by doing:
   
-{{{
+```
  ~/opencl-book-samples$ mkdir build
  ~/opencl-book-samples$ cd build
  ~/opencl-book-samples$ cmake ../
  ~/opencl-book-samples$ make
-}}}
+```
 
-  
