@@ -14,8 +14,8 @@ The sample code for the OpenCL Programming Guide was designed to work on a varie
 The OpenCL sample code depends on the following libraries:
 
   * An OpenCL v1.1 implementation for your platform/device
-  * [http://freeimage.sourceforge.net/ FreeImage] (optional, required for _Chapter_8/ImageFilter2D_ example only)
-  * [http://www.boost.org/ Boost] (optional, required for _Chapter_16/Dijkstra_ example, Linux/Mac-only)
+  * [FreeImage](http://freeimage.sourceforge.net) (optional, required for _Chapter_8/ImageFilter2D_ example only)
+  * [Boost](http://www.boost.org) (optional, required for _Chapter_16/Dijkstra_ example, Linux/Mac-only)
 
 ## Checkout the source code
 
